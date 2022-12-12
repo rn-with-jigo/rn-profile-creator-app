@@ -26,9 +26,9 @@ const MainRoots = () => { // here manage those stack which only show while condi
 }
 const StackNavigaiton = () => {
     return (
-        <Stack.Navigator initialRouteName={navStrings.authRoots}>
-            <Stack.Screen component={AuthRoots} name={navStrings.authRoots} />
-            <Stack.Screen component={MainRoots} name={navStrings.mainRoots} />
+        <Stack.Navigator initialRouteName={navStrings.mainRoots}>
+            <Stack.Screen component={AuthRoots} name={navStrings.authRoots} options={{headerShown:false}} />
+            <Stack.Screen component={MainRoots} name={navStrings.mainRoots} options={{headerShown:false}} />
         </Stack.Navigator>
     )
 }
